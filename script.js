@@ -14,9 +14,6 @@ const dialogTitle = document.getElementById("dialog-title");
 const dialogMeta = document.getElementById("dialog-meta");
 const dialogBody = document.getElementById("dialog-body");
 
-const newsletterForm = document.getElementById("newsletter-form");
-const newsletterMessage = document.getElementById("newsletter-message");
-
 let activeCategory = "all";
 
 // Demo article content.
@@ -204,19 +201,4 @@ articleDialog.addEventListener("click", (event) => {
   }
 });
 
-// Newsletter form demo
-newsletterForm.addEventListener("submit", (event) => {
-  event.preventDefault();
 
-  const emailInput = document.getElementById("newsletter-email");
-
-  if (!emailInput.checkValidity()) {
-    emailInput.reportValidity();
-    return;
-  }
-
-  newsletterMessage.textContent =
-    "You're on the demo list! No email has been stored or sent.";
-
-  newsletterForm.reset();
-});
