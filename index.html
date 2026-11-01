@@ -1,0 +1,339 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The In-Between — a digital journal of books, little things, and becoming.">
+  <title>The In-Between — Notes from the process of becoming</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="announcement">
+    <span>A small corner of the internet, made with care.</span>
+    <span class="announcement-mark">✳</span>
+  </div>
+
+  <header class="site-header">
+    <a href="#" class="wordmark" aria-label="The In-Between home">
+      <span class="wordmark-main">the in-between</span>
+      <span class="wordmark-sub">A DIGITAL JOURNAL</span>
+    </a>
+
+    <button class="menu-toggle" id="menu-toggle"
+      aria-label="Open navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+      <a href="#journal">The Journal</a>
+      <a href="#marginalia">Marginalia</a>
+      <a href="#little-things">Little Things, Lately</a>
+      <a href="#about" class="nav-about">About <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> A journal for the in-between</p>
+
+        <h1>Notes from the<br>process of <em>becoming.</em></h1>
+
+        <p class="hero-description">
+          A little corner for things worth keeping:
+          stories, thoughts, books, and the small moments
+          that make a life.
+        </p>
+
+        <a href="#journal" class="text-link">
+          Wander through <span>↓</span>
+        </a>
+      </div>
+
+      <div class="hero-art">
+        <div class="hero-image-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1000&q=85"
+            alt="A warm, sunlit creative space"
+            class="hero-image"
+          >
+          <div class="image-note">
+            <span class="note-star">✳</span>
+            <span>somewhere<br>along the way</span>
+          </div>
+        </div>
+
+        <div class="hero-caption">
+          <span>VOL. 01</span>
+          <span>ON GROWING, GATHERING & BEGINNING AGAIN</span>
+        </div>
+      </div>
+
+      <div class="hero-side-note">A WORK IN PROGRESS, JUST LIKE US</div>
+    </section>
+
+    <section class="intro-strip">
+      <p>For the things that don't fit neatly into a timeline.</p>
+      <span>✳</span>
+      <p>For the versions of ourselves we're still meeting.</p>
+    </section>
+
+    <section class="journal-section section-padding" id="journal">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">01 / THE JOURNAL</p>
+          <h2>Thoughts in <em>progress.</em></h2>
+        </div>
+
+        <a href="#all-posts" class="text-link desktop-link">
+          All entries <span>↗</span>
+        </a>
+      </div>
+
+      <article class="featured-card">
+        <a href="#article-preview" class="featured-image-link" data-article="featured">
+          <img
+            src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1200&q=85"
+            alt="Quiet landscape with mountains and a lake"
+            class="featured-image"
+          >
+          <span class="image-label">A NOTE TO SELF</span>
+        </a>
+
+        <div class="featured-content">
+          <p class="post-meta">OCTOBER 18, 2026 <span>·</span> 5 MIN READ</p>
+          <h3>
+            <a href="#article-preview" data-article="featured">
+              On being a work in progress
+            </a>
+          </h3>
+          <p class="post-excerpt">
+            Maybe becoming isn't a grand, cinematic moment.
+            Maybe it's the quiet decision to keep showing up,
+            even when the picture is still a little blurry.
+          </p>
+          <a href="#article-preview" class="text-link" data-article="featured">
+            Read the entry <span>↗</span>
+          </a>
+        </div>
+      </article>
+    </section>
+
+    <section class="entries-section section-padding" id="all-posts">
+      <div class="section-heading entries-heading">
+        <div>
+          <p class="eyebrow">02 / THE ARCHIVE</p>
+          <h2>A few things <em>I've been thinking about.</em></h2>
+        </div>
+
+        <div class="archive-tools">
+          <label class="search-wrap">
+            <span class="search-symbol">⌕</span>
+            <input type="search" id="post-search" placeholder="Find a thought..." aria-label="Search blog posts">
+          </label>
+        </div>
+      </div>
+
+      <div class="category-filters" role="group" aria-label="Filter articles">
+        <button class="filter-button active" data-filter="all">Everything</button>
+        <button class="filter-button" data-filter="journal">The Journal</button>
+        <button class="filter-button" data-filter="marginalia">Marginalia</button>
+        <button class="filter-button" data-filter="little-things">Little Things, Lately</button>
+      </div>
+
+      <div class="post-grid" id="post-grid">
+        <article class="post-card" data-category="journal" data-title="the art of starting before you're ready">
+          <a href="#article-preview" class="post-image-link" data-article="starting">
+            <img src="https://images.unsplash.com/photo-1455390582262-044c420a568e?auto=format&fit=crop&w=800&q=85" alt="Notebook and pen on a desk">
+            <span class="card-number">01</span>
+          </a>
+          <div class="post-card-content">
+            <p class="post-meta">THE JOURNAL <span>·</span> 4 MIN READ</p>
+            <h3><a href="#article-preview" data-article="starting">The art of starting before you're ready</a></h3>
+            <p>On imperfect beginnings, tiny steps, and letting yourself learn in public.</p>
+            <a href="#article-preview" class="card-read-link" data-article="starting">Read more ↗</a>
+          </div>
+        </article>
+
+        <article class="post-card" data-category="marginalia" data-title="books that feel like finding a new room in yourself">
+          <a href="#article-preview" class="post-image-link" data-article="books">
+            <img src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?auto=format&fit=crop&w=800&q=85" alt="Open book in soft natural light">
+            <span class="card-number">02</span>
+          </a>
+          <div class="post-card-content">
+            <p class="post-meta">MARGINALIA <span>·</span> 6 MIN READ</p>
+            <h3><a href="#article-preview" data-article="books">Books that feel like finding a new room in yourself</a></h3>
+            <p>Some stories don't just entertain us. They quietly rearrange the furniture.</p>
+            <a href="#article-preview" class="card-read-link" data-article="books">Read more ↗</a>
+          </div>
+        </article>
+
+        <article class="post-card" data-category="little-things" data-title="little things lately a collection of ordinary magic">
+          <a href="#article-preview" class="post-image-link" data-article="little">
+            <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=800&q=85" alt="Flowers in soft afternoon light">
+            <span class="card-number">03</span>
+          </a>
+          <div class="post-card-content">
+            <p class="post-meta">LITTLE THINGS, LATELY <span>·</span> 3 MIN READ</p>
+            <h3><a href="#article-preview" data-article="little">A collection of ordinary magic</a></h3>
+            <p>Small joys, familiar songs, and the details I don't want to forget.</p>
+            <a href="#article-preview" class="card-read-link" data-article="little">Read more ↗</a>
+          </div>
+        </article>
+
+        <article class="post-card" data-category="journal" data-title="a gentle reminder that your timeline is yours">
+          <a href="#article-preview" class="post-image-link" data-article="timeline">
+            <img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=85" alt="Golden sunlight over a quiet field">
+            <span class="card-number">04</span>
+          </a>
+          <div class="post-card-content">
+            <p class="post-meta">THE JOURNAL <span>·</span> 5 MIN READ</p>
+            <h3><a href="#article-preview" data-article="timeline">A gentle reminder that your timeline is yours</a></h3>
+            <p>There is no universal calendar for becoming who you want to be.</p>
+            <a href="#article-preview" class="card-read-link" data-article="timeline">Read more ↗</a>
+          </div>
+        </article>
+
+        <article class="post-card" data-category="marginalia" data-title="the passages that stay with us">
+          <a href="#article-preview" class="post-image-link" data-article="passages">
+            <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=800&q=85" alt="Books arranged on a library shelf">
+            <span class="card-number">05</span>
+          </a>
+          <div class="post-card-content">
+            <p class="post-meta">MARGINALIA <span>·</span> 4 MIN READ</p>
+            <h3><a href="#article-preview" data-article="passages">The passages that stay with us</a></h3>
+            <p>A little reading note on why certain words find us at exactly the right time.</p>
+            <a href="#article-preview" class="card-read-link" data-article="passages">Read more ↗</a>
+          </div>
+        </article>
+
+        <article class="post-card" data-category="little-things" data-title="currently collecting songs for slow mornings">
+          <a href="#article-preview" class="post-image-link" data-article="playlist">
+            <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=800&q=85" alt="Coffee and a quiet morning table">
+            <span class="card-number">06</span>
+          </a>
+          <div class="post-card-content">
+            <p class="post-meta">LITTLE THINGS, LATELY <span>·</span> 2 MIN READ</p>
+            <h3><a href="#article-preview" data-article="playlist">Currently collecting songs for slow mornings</a></h3>
+            <p>A tiny soundtrack for days that don't need to rush into anything.</p>
+            <a href="#article-preview" class="card-read-link" data-article="playlist">Read more ↗</a>
+          </div>
+        </article>
+      </div>
+
+      <p class="empty-state" id="empty-state" hidden>
+        No entries found. Try another search or category.
+      </p>
+    </section>
+
+    <section class="marginalia-banner" id="marginalia">
+      <div class="marginalia-decoration">“</div>
+      <div class="marginalia-content">
+        <p class="eyebrow">A LITTLE SPACE FOR THE THINGS THAT LINGER</p>
+        <h2>Somewhere between<br>the lines, <em>we find ourselves.</em></h2>
+        <p>Books, ideas, and words that stay long after the last page.</p>
+        <a href="#all-posts" class="text-link">Explore Marginalia <span>↗</span></a>
+      </div>
+      <div class="marginalia-stamp">READ<br>NOTICE<br>REMEMBER</div>
+    </section>
+
+    <section class="little-things-section section-padding" id="little-things">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">03 / LITTLE THINGS, LATELY</p>
+          <h2>A few things making life <em>feel like life.</em></h2>
+        </div>
+      </div>
+
+      <div class="little-things-grid">
+        <div class="little-note">
+          <span class="little-icon">♫</span>
+          <p class="little-label">ON REPEAT</p>
+          <h3>Songs for the walk back</h3>
+          <p>That one playlist that makes even the most ordinary evening feel cinematic.</p>
+        </div>
+
+        <div class="little-note">
+          <span class="little-icon">✿</span>
+          <p class="little-label">CURRENTLY LOVING</p>
+          <h3>Slow mornings</h3>
+          <p>Warm drinks, open windows, and a few minutes before the world gets loud.</p>
+        </div>
+
+        <div class="little-note">
+          <span class="little-icon">✎</span>
+          <p class="little-label">A SMALL REMINDER</p>
+          <h3>Keep the little things</h3>
+          <p>Not every meaningful moment arrives with a big announcement.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="about-image">
+        <img
+          src="https://images.unsplash.com/photo-1447875569765-2b6b3d8b4b1c?auto=format&fit=crop&w=900&q=85"
+          alt="A quiet desk with books and natural light"
+        >
+        <span class="about-image-caption">A PLACE TO PAUSE</span>
+      </div>
+
+      <div class="about-copy">
+        <p class="eyebrow">A NOTE FROM THE EDITOR</p>
+        <h2>Hello, I'm the person<br>behind <em>the in-between.</em></h2>
+        <p>
+          A student, a reader, a collector of little moments,
+          and someone figuring things out as she goes.
+        </p>
+        <p>
+          This journal is a place to make sense of the things
+          I'm learning, loving, questioning, and becoming.
+          I'm glad you found your way here.
+        </p>
+        <a href="mailto:hello@example.com" class="text-link">Say hello <span>↗</span></a>
+      </div>
+    </section>
+
+    <section class="newsletter-section">
+      <p class="eyebrow">A LETTER, EVERY SO OFTEN</p>
+      <h2>Little notes for your <em>inbox.</em></h2>
+      <p>Occasional thoughts, recent favorites, and things worth keeping.</p>
+
+      <form class="newsletter-form" id="newsletter-form">
+        <label class="visually-hidden" for="newsletter-email">Your email address</label>
+        <input type="email" id="newsletter-email" placeholder="Your email address" required>
+        <button type="submit">Count me in <span>↗</span></button>
+      </form>
+      <p class="newsletter-message" id="newsletter-message" role="status" aria-live="polite"></p>
+      <span class="newsletter-footnote">A little note: this is a frontend demo. No emails are collected.</span>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a href="#" class="footer-wordmark">the in-between<span>✳</span></a>
+    <p>Made slowly, with care. © 2026</p>
+    <div class="footer-links">
+      <a href="#journal">Journal</a>
+      <a href="#marginalia">Marginalia</a>
+      <a href="#about">About</a>
+    </div>
+  </footer>
+
+  <dialog class="article-dialog" id="article-dialog">
+    <button class="dialog-close" id="dialog-close" aria-label="Close article">×</button>
+    <p class="eyebrow" id="dialog-category">THE JOURNAL</p>
+    <h2 id="dialog-title">Article title</h2>
+    <p class="dialog-meta" id="dialog-meta">A short read</p>
+    <div class="dialog-body" id="dialog-body"></div>
+    <p class="dialog-demo-note">This is a sample article preview. Full articles can be added as the blog grows.</p>
+  </dialog>
+</body>
+</html>
